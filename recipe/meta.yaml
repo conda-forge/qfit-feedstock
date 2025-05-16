@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv 
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -39,7 +39,7 @@ requirements:
     # installation profile (pyproject.toml), so we need to add extra packages to 
     # make sure it passes the pip check. The additional requirements introduce
     # inconsistencies between the qfit's pyproject.toml and meta.yaml, too.
-    - scipy >=1.5,<1.13.1
+    # - scipy >=1.5,<1.13.1
     - cython >=0.29.20
 
 test:
