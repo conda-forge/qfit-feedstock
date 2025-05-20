@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/qfit-{{ version }}.tar.gz
-  sha256: f1ecf5b702dcbaeeb373cecf05e6d582234e7d5f527349cbbc2db55473e91cbb
+  sha256: fae6a115c48ce6d7765dcbd8114cb5ffb2546508f6d054681ceb37d8e0628ba8
 
 build:
   noarch: python
