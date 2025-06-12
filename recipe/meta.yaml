@@ -1,5 +1,5 @@
 {% set name = "qfit" %}
-{% set version = "2.2.3" %}
+{% set version = "2.3.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/qfit-{{ version }}.tar.gz
-  sha256: fae6a115c48ce6d7765dcbd8114cb5ffb2546508f6d054681ceb37d8e0628ba8
+  sha256: 16ffedfb07dd71a290245cc6eb979d47356131879aeef67d60f39365c3cda29c
 
 build:
   noarch: python
