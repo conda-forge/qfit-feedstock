@@ -1,5 +1,5 @@
 {% set name = "qfit" %}
-{% set version = "2.3.1" %}
+{% set version = "3.0.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/qfit-{{ version }}.tar.gz
-  sha256: 1877a53d7d899350b856d204e4e33f4c32ffcb6f174fc0ed0b917b7e1fde93f1
+  sha256: 5d04dbe5f190dec58a87f60a4d10dd9b676923afc0d125954135e36bad1e091a
 
 build:
   noarch: python
@@ -35,6 +35,7 @@ requirements:
     - jupyter
     - pathos
     - dill
+    - pywavelets
     # scqubits' conda build profile (meta.yaml) is different from the pip 
     # installation profile (pyproject.toml), so we need to add extra packages to 
     # make sure it passes the pip check. The additional requirements introduce
